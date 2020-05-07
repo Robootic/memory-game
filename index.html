@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link href="home.css">
+
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div id="playerSettings">
+
+      <div id="playerName">
+        <h3>Qual o seu nome jogador ?</h3>
+        <input id="inputName" type="text" name="name">
+      </div>
+      
+      <div id="palyerAvatar">
+
+        <h3>Como voce querser representado ?</h3>
+
+        <div>
+          <img class="playerChar" src="" onclick="charSelect()">
+          <img class="playerChar" src="" onclick="charSelect()">
+          <img class="playerChar" src="" onclick="charSelect()">
+        </div>
+
+      </div>
+
+      <div id="gameDifficulty">
+        
+        <h3>Qual a dificuldade ?</h3>
+
+        <div>
+          <img class="difficulities" src="" onclick="difficultySelect()">
+          <img class="difficulities" src="" onclick="difficultySelect()">
+          <img class="difficulities" src="" onclick="difficultySelect()">
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div id="gameStart">
+      <button id="gameRender" onclick="gameStart()">Começar o jogo</button>
+    </div>
+
+  </div>
+
+  <script src="js/renderGame.js"></script>
+</body>
+</html>
